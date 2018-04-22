@@ -1,7 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-    </head>
-    <body></body>
+
+<head>
+    <title>Mega Sena</title>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <title>Cv - Bruno Afonso</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-control" content="public" />
+</head>
+
+<body>
+    <header>
+        <h1>Gerador de Jogos da MegaSena</h1>
+        <p>Quem sabe hoje não é seu dia de sorte.</p>
+        <div class="divisor">
+            <img src="IMG/lottery-machine.png" />
+        </div>
+    </header>
+    <div class="container">
+        <div class="row formulario">
+            <div class="col-sx-12 col-md-12 col-lg-12">
+                <form>
+                    <div class="col-sx-12 col-md-6 col-lg-6 form-group">
+                        <label for="quantidadeJogos">Quantidade de Jogos</label>
+                        <input id="quantidadeJogos" type="number" min="1" name="quantidadeJogos" placeholder="Ex.: 2" required/>
+                    </div>
+                    <div class="col-sx-12 col-md-6 col-lg-6 form-group">
+                        <label for="quantidadeNumeros">Quantidade de números</label>
+                        <input id="quantidadeNumeros" type="number" min="6" max="15" name="quantidadeNumeros" placeholder="Ex.: 7" required/>
+                    </div>
+                    <div class="col-sx-12 col-md-12 col-lg-12 form-group">
+                        <button class="btn btn-success" type="submit">Gerar Jogos</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="jogos">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="SCRIPT/script.js"></script>
+</body>
+
 </html>
